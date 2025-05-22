@@ -42,7 +42,7 @@
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
          </padding>
       </Label>
-      <RadioButton fx:id="eyeBlueRadio" layoutX="53.0" layoutY="175.0" mnemonicParsing="false" text="niebieskie">
+      <RadioButton fx:id="eyeBlueRadio" layoutX="53.0" layoutY="175.0" mnemonicParsing="false" text="niebieskie" selected="true">
          <font>
             <Font size="15.0" />
          </font>

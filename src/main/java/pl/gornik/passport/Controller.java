@@ -79,6 +79,7 @@ public class Controller implements Initializable {
 
         okButton.setOnAction(actionEvent ->  {
             Alert alert = null;
+            alert.setHeaderText(null);
             RadioButton eyeColorData = (RadioButton) eyecolor.getSelectedToggle();
                 if (!numberTextField.getText().isEmpty()
                         && !firstnameTextField.getText().isEmpty()
