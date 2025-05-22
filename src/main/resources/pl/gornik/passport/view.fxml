@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="874.0" style="-fx-background-color: #5F9EA0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.gornik.passport.Controller">
+   <children>
+      <Label layoutX="45.0" layoutY="20.0" text="Numer">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="55.0" text="Imię">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="92.0" text="Nazwisko">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numberTextField" layoutX="145.0" layoutY="18.0" prefHeight="25.0" prefWidth="323.0" style="-fx-background-color: #F0FFFF;" />
+      <TextField fx:id="firstnameTextField" layoutX="145.0" layoutY="53.0" prefHeight="25.0" prefWidth="323.0" style="-fx-background-color: #F0FFFF;" />
+      <TextField fx:id="lastnameTextField" layoutX="145.0" layoutY="90.0" prefHeight="25.0" prefWidth="323.0" style="-fx-background-color: #F0FFFF;" />
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="CADETBLUE" height="142.0" layoutX="34.0" layoutY="150.0" stroke="WHITE" strokeLineCap="ROUND" strokeMiterLimit="20.0" strokeType="INSIDE" strokeWidth="3.0" width="437.0" />
+      <Label layoutX="53.0" layoutY="139.0" style="-fx-background-color: #5F9EA0;" text="Kolor oczu">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </Label>
+      <RadioButton fx:id="eyeBlueRadio" layoutX="53.0" layoutY="175.0" mnemonicParsing="false" text="niebieskie">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="eyecolor" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="eyeGreenRadio" layoutX="53.0" layoutY="212.0" mnemonicParsing="false" text="zielone" toggleGroup="$eyecolor">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="eyeBrownRadio" layoutX="53.0" layoutY="250.0" mnemonicParsing="false" text="piwne" toggleGroup="$eyecolor">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <ImageView fx:id="personImage" fitHeight="178.0" fitWidth="156.0" layoutX="522.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../000-zdjecie.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fingerprintImage" fitHeight="178.0" fitWidth="138.0" layoutX="718.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../000-odcisk.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="okButton" layoutX="599.0" layoutY="225.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="178.0" style="-fx-background-color: #F0FFFF;" text="OK">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
